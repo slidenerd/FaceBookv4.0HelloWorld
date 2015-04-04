@@ -2,4 +2,10 @@
     <string name="app_name">FBv4.0 Login</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_simple_login">With Simple Login Button</string>
+    <string name="action_custom_login">With Custom Login Button</string>
+
+    <!--    <string name="com_facebook_loginview_log_in_button_long">Login</string>
+        <string name="com_facebook_loginview_log_out_button">Logout</string>
+        <string name="com_facebook_loginview_log_in_button">Login</string>-->
 </resources>

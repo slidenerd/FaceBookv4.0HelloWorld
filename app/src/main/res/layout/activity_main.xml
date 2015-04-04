@@ -1,5 +1,7 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
-    android:name="vivz.slidenerd.facebookv40helloworld.FragmentWithLoginButton"
-    tools:layout="@layout/fragment_with_login_button" android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout="@layout/fragment_simple_login_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>

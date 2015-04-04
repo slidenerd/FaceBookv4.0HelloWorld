@@ -14,7 +14,6 @@ import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
 import com.facebook.Profile;
 import com.facebook.ProfileTracker;
 import com.facebook.login.LoginResult;
@@ -24,7 +23,7 @@ import com.facebook.login.widget.LoginButton;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class FragmentWithLoginButton extends Fragment {
+public class FragmentSimpleLoginButton extends Fragment {
 
     private TextView mTextDetails;
     private CallbackManager mCallbackManager;
@@ -53,13 +52,13 @@ public class FragmentWithLoginButton extends Fragment {
     };
 
 
-    public FragmentWithLoginButton() {
+    public FragmentSimpleLoginButton() {
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FacebookSdk.sdkInitialize(getActivity());
+
         mCallbackManager = CallbackManager.Factory.create();
         setupTokenTracker();
         setupProfileTracker();
@@ -72,7 +71,7 @@ public class FragmentWithLoginButton extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_with_login_button, container, false);
+        return inflater.inflate(R.layout.fragment_simple_login_button, container, false);
     }
 
     @Override
